@@ -1,0 +1,33 @@
+﻿html{
+    font-size:60%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {/*element selector*/
+    background-color:antiquewhite;
+    margin:0;
+    font-size:1.8rem;/*18 pixels*/
+}
+
+html{
+
+}
+.imgcontainer
+{
+    border :dashed;
+    width:135px;
+    height:135px;
+}
+.container{
+    padding :0 1rem;
+    max-width:95rem;
+    margin:0 auto;
+}
+nav{
+    background-color:crimson;
+    line-height:6rem;
+    font-size:1.7rem;
+}
+nav a{
+    color:black;
+    padding:1rem;
+}

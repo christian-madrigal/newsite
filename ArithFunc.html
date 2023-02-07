@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Math</title>
+    <link href="D:\MSSA Training\testing\site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+    <script src="Scripts/DomScript.js"></script>
+
+    <link href="D:\MSSA Training\testing\site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        p {
+            color: black
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+           class="w3-bar-item w3-button">Close Menu</a>
+        <a href="Home.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+        <a href="ArithFunc.html" onclick="w3_close()" class="w3-bar-item w3-button">Simple Calculator</a>
+        <a href="Hobby.html" onclick="w3_close()" class="w3-bar-item w3-button">Hobby</a>
+        <a href="Arrays.html" onclick="w3_close()" class="w3-bar-item w3-button">Arrays</a>
+
+    </nav>
+    <div class="w3-top">
+        <div class="w3-grey w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">Simple Calculator</div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+        On this page you will be able to enter a two numbers and use the basic math functions to get the total.
+        <br />
+    </p>
+
+    <label>
+
+        <strong>Enter the first number</strong>
+        <input type="number" id="txtbox1" />
+    </label>
+    <br />
+    <label>
+        <strong>Enter the second number</strong>
+        <input type="number" id="txtbox2" />
+    </label>
+    <br />
+    <label>
+        <strong>Your result is:</strong>
+        <output id="total"></output>
+        <br />
+    </label>
+    <br />
+    <input type="button" id="addbtn" value="Add" onclick="displaySum()" />
+    <input type="button" id="subbtn" value="Substract" onclick="displayMinus()" />
+    <input type="button" id="mulbtn" value="Multiply" onclick="displayMultiply()" />
+    <input type="button" id="divbtn" value="Divide" onclick="displayDivision()" />
+    <br />
+</body>
+</html>
